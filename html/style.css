@@ -1,0 +1,28 @@
+table.stat tr:nth-child(even) {
+  font-size : 3.5vmin;
+  font-family : "Myriad Web",Verdana,Helvetica,Arial,sans-serif;
+  background : #4f4f4f none; color : #ffffff; }
+table.stat tr:nth-child(odd) {
+  font-size : 3.5vmin;
+  font-family : "Myriad Web",Verdana,Helvetica,Arial,sans-serif;
+  background : #777777 none; color : #ffffff; }
+
+table.stat th {
+  font-size : 3.5vmin;
+  font-family : "Myriad Web",Verdana,Helvetica,Arial,sans-serif;
+  background : #505866 none; color : #ffffff; }
+
+table, th, td {
+   border: 5px groove #898989;
+}
+table {
+    border-collapse: collapse;
+}
+body {
+/*  overflow:hidden;*/
+  background:
+     black;                     /* color */
+}
+h1 {
+    color: white;
+}
