@@ -50,6 +50,9 @@ for items in root.iter('aktion'):
 print "<tr><b><th>Klasse</th><th>Stunde</th><th>Fach</th><th>Lehrer</th><th>Raum</th><th>Info</th></b></tr></table>"
 #print "<center><h1>Vertretungsplan "+titel+"</h1></center>"
 #print "<div id='end'>ende</div>"
+print "Sonderinformationen: "
+for items in root.iter('fusszeile'):
+	print escape(str(ET.tostring(items.find('fussinfo'), encoding="UTF-8", method="text")))+"###"
 print "</script><script type='text/javascript' src='autoscroll2.js'>downscroll();</script>"
 
 #print "<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script><script type='text/javascript' src='autoscroll.js'></script>"
